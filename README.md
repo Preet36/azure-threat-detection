@@ -65,5 +65,5 @@ When the alert condition was met:
 
 ---
 
-## 📎 Disclaimer
+## Disclaimer
 This lab was conducted in a controlled environment for educational purposes only.
