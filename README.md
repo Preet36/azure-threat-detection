@@ -2,14 +2,14 @@
 
 # Azure Sentinel Brute Force Detection Lab
 
-## 📌 Overview
+## Overview
 This project demonstrates the implementation of a **cloud-based SIEM solution** using **Microsoft Sentinel** to detect and respond to brute force login attacks on a Windows virtual machine hosted in Azure.
 
 The lab simulates a real-world attack scenario by generating multiple failed login attempts, detecting them using **Event ID 4625**, and triggering automated alerts and email notifications.
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 - Microsoft Azure
 - Microsoft Sentinel (SIEM)
 - Log Analytics Workspace
@@ -20,7 +20,7 @@ The lab simulates a real-world attack scenario by generating multiple failed log
 
 ---
 
-## ⚙️ Lab Architecture
+## Lab Architecture
 1. Windows VM generates security logs
 2. Logs are forwarded to Log Analytics
 3. Microsoft Sentinel analyzes events
@@ -29,7 +29,7 @@ The lab simulates a real-world attack scenario by generating multiple failed log
 
 ---
 
-## 🔍 Detection Logic
+## Detection Logic
 The brute force attack was detected using **Event ID 4625**, which represents failed login attempts on Windows systems.
 
 **Key Indicators:**
@@ -39,7 +39,7 @@ The brute force attack was detected using **Event ID 4625**, which represents fa
 
 ---
 
-## 📊 Evidence of Detection
+## Evidence of Detection
 Screenshots included in this repository show:
 - Event ID 4625 logs in Sentinel
 - High severity brute force alert
@@ -47,7 +47,7 @@ Screenshots included in this repository show:
 
 ---
 
-## 🚨 Incident Response
+## Incident Response
 When the alert condition was met:
 - Microsoft Sentinel classified the activity as **High Severity**
 - A Logic App workflow automatically sent an email alert
@@ -55,7 +55,7 @@ When the alert condition was met:
 
 ---
 
-## 🎯 Skills Demonstrated
+## Skills Demonstrated
 - SIEM deployment and configuration
 - Cloud security monitoring
 - KQL query creation
